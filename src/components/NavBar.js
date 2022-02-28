@@ -5,7 +5,7 @@ export default function NavBar() {
     <nav className="nav">
       <img className="nav--logo" src={reactLogoSmall} alt="React logo" />
       <h3 className="nav--title">ReactFacts</h3>
-      <h4 className="nav--blurp">React Course - Project 1</h4>
+      <h4 className="nav--blurp">Powered by Heroku</h4>
     </nav>
   );
 }
