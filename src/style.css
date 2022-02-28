@@ -1,0 +1,83 @@
+:root {
+  --dark-b: #282c34;
+  --dark-1: #21222a;
+  --dark-2: #33373e;
+  --light-b: #ffffff;
+  --accent-b: #61dafb;
+  --font-b: "Inter", sans-serif;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100vh;
+}
+
+body {
+  height: 100%;
+  background: var(--dark-b);
+  font-family: var(--font-b);
+  margin: 0;
+  background-image: url("./images/react-logo-large.svg");
+  background-position: right 60%;
+  background-repeat: no-repeat;
+  background-size: 25vmin;
+}
+
+.nav {
+  background: var(--dark-1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.nav .logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.nav .nav--logo {
+  width: 12vmin;
+  height: 12vmin;
+  fill: var(--accent-b);
+}
+.nav .nav--title {
+  color: var(--accent-b);
+  font-size: calc(2px + 3.5vmin);
+  margin-right: auto;
+}
+.nav .nav--blurp {
+  justify-self: flex-end;
+  font-size: calc(2px + 2vmin);
+  font-weight: 600;
+  color: var(--light-b);
+  padding-right: 2rem;
+}
+
+.main {
+  color: var(--light-b);
+  padding: 2rem;
+}
+.main .main--title {
+  font-size: calc(2px + 5vmin);
+  letter-spacing: -0.05em;
+}
+.main .main--list {
+  font-size: calc(2px + 2vmin);
+  line-height: 175%;
+  padding: 0;
+  margin: 0;
+}
+.main .main--list > li {
+  margin-left: 2em;
+  padding-left: 0.5em;
+}
+.main .main--list > li::marker {
+  color: var(--accent-b);
+  font-size: 1.4rem;
+}
